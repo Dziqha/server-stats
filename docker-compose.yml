@@ -1,0 +1,14 @@
+services:
+  app:
+    image: bisnisqu/stats-app:latest  # Ganti dengan nama image di Docker Hub kamu
+    ports:
+      - "8080:8080"
+    restart: always
+
+  # Ini si Satpam-nya
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 # Cek setiap 30 detik sekali
+    restart: always

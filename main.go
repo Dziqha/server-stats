@@ -4,7 +4,7 @@ import "net/http"
 
 func main() {
 	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Stats endpoint - DEPLOYED VIA ROBOT"))
+		w.Write([]byte("Stats endpoint - V3 AUTO DEPLOY"))
 	})
 
 	http.ListenAndServe(":8080", handler)
