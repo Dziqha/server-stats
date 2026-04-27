@@ -2,6 +2,8 @@
 
 A comprehensive bash script to analyze server performance statistics on Linux systems.
 
+**Project Page:** https://roadmap.sh/projects/server-stats
+
 ## Features
 
 ### Core Requirements
