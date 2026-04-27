@@ -10,5 +10,7 @@ services:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - DOCKER_API_VERSION=1.41  # Tambahkan baris ini!
     command: --interval 30 # Cek setiap 30 detik sekali
     restart: always
