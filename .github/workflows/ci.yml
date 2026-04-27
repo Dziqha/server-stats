@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: username-docker-kamu/stats-app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/stats-app:latest
